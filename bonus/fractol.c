@@ -97,7 +97,11 @@ int	main(int32_t argc, char **argv)
 		mlx_resize_hook(box.mlx, resize_img, &box);
 	}
 	else
+	{
 		mlx_cursor_hook(box.mlx, cursor_pos, &box);
+		mlx_scroll_hook(box.mlx, mouse_scroll, &box);
+		mlx_resize_hook(box.mlx, resize_img, &box);
+	}
 	mlx_loop(box.mlx);
 	mlx_terminate(box.mlx);
 	return (0);

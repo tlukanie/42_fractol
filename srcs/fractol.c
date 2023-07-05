@@ -6,7 +6,7 @@
 /*   By: tlukanie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 20:04:16 by tlukanie          #+#    #+#             */
-/*   Updated: 2023/06/29 14:46:33 by tlukanie         ###   ########.fr       */
+/*   Updated: 2023/07/05 07:21:24 by tlukanie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,17 +91,9 @@ int	main(int32_t argc, char **argv)
 		return (EXIT_FAILURE);
 	}
 	mlx_key_hook(box.mlx, key_press, &box);
-	if (argv[1][0] == 'M' || argv[1][0] == 'B')
-	{
-		mlx_scroll_hook(box.mlx, mouse_scroll, &box);
-		mlx_resize_hook(box.mlx, resize_img, &box);
-	}
-	else
-	{
-		mlx_cursor_hook(box.mlx, cursor_pos, &box);
-		mlx_scroll_hook(box.mlx, mouse_scroll, &box);
-		mlx_resize_hook(box.mlx, resize_img, &box);
-	}
+	mlx_cursor_hook(box.mlx, cursor_pos, &box);
+	mlx_scroll_hook(box.mlx, mouse_scroll, &box);
+	mlx_resize_hook(box.mlx, resize_img, &box);
 	mlx_loop(box.mlx);
 	mlx_terminate(box.mlx);
 	return (0);

@@ -1,4 +1,4 @@
-# Fract-ol
+# Fract-ol (MacOS/Linux)
 <h3>Burning Ship</h3>
 <img width="300" alt="Screenshot 2023-06-26 at 20 16 42" src="https://github.com/tlukanie/42_fractol/assets/120662241/d1cb74a0-50f3-45cb-872a-5a6ab555f4eb">
 <p>Fractals are infinitely complex patterns that are self-similar across different scales. They are created by repeating a simple process over and over in an ongoing feedback loop. Driven by recursion, fractals are images of dynamic systems – the pictures of Chaos.</p>
